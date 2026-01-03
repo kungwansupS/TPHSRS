@@ -1,0 +1,9 @@
+{
+  "total_hospitals": 10,
+  "public_hospitals": 6,
+  "private_hospitals": 4,
+  "departments": 14,
+  "symptoms": 15,
+  "provinces": 4,
+  "regions": 4
+}
