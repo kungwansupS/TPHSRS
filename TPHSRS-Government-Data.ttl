@@ -10,7 +10,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/204424/TPHSRS">
         <rdfs:comment>Thai Public Health Service Recommendation System - Generated from Government Open Data</rdfs:comment>
         <rdfs:comment>Data Source: Simulated from data.go.th structure</rdfs:comment>
-        <rdfs:comment>Generated on: 2026-01-04 02:17:18</rdfs:comment>
+        <rdfs:comment>Generated on: 2026-01-04 02:27:15</rdfs:comment>
     </owl:Ontology>
 
 
