@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/204424/TPHSRS/"
+     xml:base="http://www.semanticweb.org/204424/TPHSRS/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/204424/TPHSRS">
+        <rdfs:comment>Thai Public Health Service Recommendation System (TPHSRS) for Software Agent Development</rdfs:comment>
+    </owl:Ontology>
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/204424/TPHSRS/acceptsRight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/204424/TPHSRS/Hospital"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/204424/TPHSRS/MedicalRight"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/204424/TPHSRS/suggestsDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/204424/TPHSRS/Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/204424/TPHSRS/Department"/>
+    </owl:ObjectProperty>
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/204424/TPHSRS/hasPhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/204424/TPHSRS/Hospital"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/204424/TPHSRS/Hospital"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/204424/TPHSRS/MedicalRight"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/204424/TPHSRS/Symptom"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/204424/TPHSRS/Department"/>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/204424/TPHSRS/PublicHospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/204424/TPHSRS/Hospital"/>
+    </owl:Class>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/204424/TPHSRS/SirirajHospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/204424/TPHSRS/PublicHospital"/>
+        <hasPhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02-419-1000</hasPhoneNumber>
+    </owl:NamedIndividual>
+</rdf:RDF>
